@@ -1,95 +1,104 @@
-*{
+* {
     margin: 0px;
     scroll-behavior: smooth;
 }
-.container{
+
+.container {
     background-color: white;
     margin: 0px;
 }
-.row{
+
+/* Sticky Navigation Bar */
+.row {
     background-color: rgb(174, 104, 197);
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: space-between;
-    position:sticky;
+    position: sticky;
     top: 0px;
-    
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    padding: 10px 20px;
 }
-.row1 {
-    display:flex;
+
+/* Section Styling */
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
     justify-content: space-around;
     padding: 20px;
     height: 100%;
     align-items: center;
+    margin: 20px 0; /* Add gap between sections */
+    border-radius: 10px; /* Add smooth rounded corners */
 }
-.imgclass{
-    max-width: 300px;
-    height:auto;
-    margin-left:20px;
-    border-radius:100px;
+
+/* Specific Section Backgrounds */
+.row1 {
+    background-color: rgb(240, 240, 240); /* Light gray for Home section */
 }
 .row2 {
-    display:flex;
-    background-color: rgb(174, 107, 194);
-    justify-content: space-around;
-    padding: 20px;
-    height: 100%;
-    align-items: center;
+    background-color: rgb(174, 107, 194); /* Projects */
 }
 .row3 {
-    display:flex;
-    background-color: rgb(175, 168, 177);
-    justify-content: space-around;
-    padding: 20px;
-    height: 100%;
-    align-items: center;
+    background-color: rgb(175, 168, 177); /* About */
 }
 .row4 {
-    display:flex;
-    background-color: aliceblue;
-    justify-content: space-around;
-    padding: 20px;
-    height: 100%;
-    align-items: center;
+    background-color: aliceblue; /* Services */
 }
-.row4h2{
+.row5 {
+    background-color: rgb(245, 245, 245); /* Contact */
+}
+
+/* Image Styling */
+.imgclass {
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px; /* Smooth rounded edges */
+}
+
+/* Headings for Services Section */
+.row4h2 {
     margin-top: 0px;
     text-align: center;
     padding: 30px;
 }
-.box{
-    padding:10px;
-}
-.box1{
+
+/* Boxes in Services Section */
+.box1 {
     padding: 20px;
     background-color: white;
-    color:black;
+    color: black;
     justify-content: space-around;
     margin: 10px;
     border-radius: 10px;
-
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
+/* Navigation Menu */
 li {
     display: inline;
-    padding: 5px;
+    padding: 10px;
     font-size: large;
 }
+
 a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
+    color: lightgray;
 }
-.imgclass{
-    max-width: 300px;
-    height:auto;
-    margin-left:20px;
-    border-radius: 10px;
-}
-footer{
+
+/* Footer Styling */
+footer {
     text-align: center;
-    margin-top:  0px;
+    margin-top: 20px;
     margin-bottom: 0px;
     padding: 20px;
     background-color: lightgrey;
+    color: black;
+    font-size: 0.9em;
 }
